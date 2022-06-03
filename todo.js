@@ -175,22 +175,27 @@ function todoMain() {
     let tdElem1 = document.createElement("td");
     tdElem1.appendChild(checkboxElem);
     trElem.appendChild(tdElem1);
+    checkboxElem.className = "categoryCell";
+    tdElem1.className = "categoryCell";
 
     // date cell
     let dateElem = document.createElement("td");
 
     dateElem.innerText = formatDate(date);
     trElem.appendChild(dateElem);
+    dateElem.className = "categoryCell";
 
     // time cell
     let timeElem = document.createElement("td");
     timeElem.innerText = time;
     trElem.appendChild(timeElem);
+    timeElem.className = "categoryCell";
 
     // to-do cell
     let tdElem2 = document.createElement("td");
     tdElem2.innerText = inputValue;
     trElem.appendChild(tdElem2);
+    tdElem2.className = "categoryCell";
 
     // category cell
     let tdElem3 = document.createElement("td");
@@ -207,6 +212,7 @@ function todoMain() {
     let editTd = document.createElement("td");
     editTd.appendChild(editSpan);
     trElem.appendChild(editTd);
+    editTd.className = "categoryCell";
 
 
     // delete cell
@@ -218,6 +224,7 @@ function todoMain() {
     let tdElem4 = document.createElement("td");
     tdElem4.appendChild(spanElem);
     trElem.appendChild(tdElem4);
+    tdElem4.className = "categoryCell";
 
 
     // done button
@@ -300,7 +307,7 @@ function todoMain() {
       headerToolbar: {
         left: 'prev,next today',
         center: 'title',
-        right: 'dayGridMonth,timeGridWeek,timeGridDay'
+        right: 'dayGridMonth'
       },
       events: [],
       eventClick: function (info) {

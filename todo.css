@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Rowdies&family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+
+* {
+  border: 0;
+  margin: 0;
+}
 
 .strike {
   text-decoration: line-through;
@@ -13,6 +18,8 @@ td{
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 1rem;
+  /* background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/cartographer.png"); */
 }
 
 .todoTable-block{
@@ -33,37 +40,50 @@ td{
 }
 
 ::-ms-input-placeholder{
-  color: #ed6a5e;
+  color: #06095c;
 }
 
 ::-webkit-input-placeholder{
-  color: #ed6a5e;
+  color: #06095c;
 }
 
 ::placeholder{
-  color: #ed6a5e;
+  color: #06095c;
 }
 
 input {
-  color:#a11e12;
+  color:#06095c;
 }
 
 h3 {
-  color:#a11e12;
+  color:#06095c;
   font-family: 'Rowdies', cursive;
+  padding: 20px 0;
 }
 
 
 body{
+  font-family: 'Baloo Bhai 2', cursive;
+  background: rgb(241, 239, 239);
+  background-image: url("https://www.transparenttextures.com/patterns/food.png");
+}
 
-  font-family: 'Titillium Web', sans-serif;
+.brand {
+  background-color: rgb(225, 225, 225);
+  color: #ddd;
+  margin: auto 0;
+  margin-bottom: 1.2rem;
+  padding: 5px 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .todo-block{
-  border: 1px solid #ff8e72;
+  border: 1px solid #06095c;
   padding: 1rem;
   border-radius: 20px;
-  color: #a11e12;
+  color: #06095c;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -71,7 +91,14 @@ body{
   #todoTable, .todo-calendar{
     margin-top: 1rem;
   }
+  .brand-name{
+    width:70%;
+    text-align: center;
+    margin: auto;
+    font-size: 2rem;
+  }
 }
+
 
 @media screen and (min-width: 768px) {
   /* for tablets or laptops or desktops */
@@ -84,6 +111,13 @@ body{
   #calendar{
     position: sticky;
     top: 0;
+  }
+  .brand-name {
+    font-size: 2rem;
+    /* color: #ffad99; */
+    text-align: center;
+    width:400px;
+    margin:auto;
   }
 }
 
@@ -156,3 +190,41 @@ button:hover{
   text-align: right;
   margin-bottom: 0.5rem;
 }
+
+#addBtn {
+    padding: 0 1rem;
+    height: 2rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #06095c;
+    border: none;
+    cursor: pointer;
+} 
+
+#sortBtn {
+    padding: 0 1rem;
+    height: 2rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #06095c;
+    border: none;
+    cursor: pointer;
+}
+
+#categoryList {
+  color: #06095c;
+  background-color: #06095c;
+}
+.categoryCell {
+  color: #06095c;
+  background-color: #ebebeb;
+}
+
+
+/* particles */
