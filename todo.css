@@ -70,7 +70,8 @@ body{
 
 .brand {
   background-color: rgb(225, 225, 225);
-  color: #ddd;
+  /* background-color: #cccccc; */
+background-image: url(http://www.transparenttextures.com/patterns/asfalt-dark.png);
   margin: auto 0;
   margin-bottom: 1.2rem;
   padding: 5px 20px;
@@ -225,6 +226,3 @@ button:hover{
   color: #06095c;
   background-color: #ebebeb;
 }
-
-
-/* particles */
