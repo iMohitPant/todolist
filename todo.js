@@ -313,7 +313,7 @@ function todoMain() {
       eventClick: function (info) {
         toEditItem(info.event);
       },
-      eventBackgroundColor: "#a11e12",
+      eventBackgroundColor: "#06095c",
       eventBorderColor: "#ed6a5e",
       editable: true,
       eventDrop: function (info) {
